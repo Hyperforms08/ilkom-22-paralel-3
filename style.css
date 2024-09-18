@@ -110,11 +110,14 @@ html {
   padding: 50px;
 }
 
+/* Mengatur bagian nama */
 #about h1 {
   font-size: 48px;
   font-weight: bold;
-  margin-bottom: 30px; /* Jarak lebih besar di bawah nama */
-  font-family: "Montserrat", sans-serif; /* Menggunakan font Montserrat */
+  margin-bottom: 30px;
+  font-family: "Montserrat";
+  text-align: left;
+  margin-left: 0; 
 }
 
 .name-black {
@@ -125,23 +128,30 @@ html {
   color: #d16937; /* Warna oranye sesuai dengan tema */
 }
 
-/* Container untuk deskripsi dan foto */
+/* Mengatur kontainer deskripsi dan foto */
 .about-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   margin-top: 50px;
+  gap: 30px;
+  width: 100%; 
 }
 
-/* Deskripsi di sebelah kiri */
+/* Mengatur bagian deskripsi agar sejajar ke kiri */
 .about-description {
-  width: 60%; /* Lebar untuk teks */
+  width: 60%; 
+  text-align: left;
+  margin-left: 0; 
 }
 
-.location {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 20px;
+/* Mengatur lokasi dan bio agar lebih rapat */
+.location,
+.bio1,
+.bio2,
+.bio3 {
+  text-align: left;   margin-left: 0;
+  line-height: 1.6; 
 }
 
 .bio {
@@ -152,12 +162,12 @@ html {
 
 /* Foto di sebelah kanan dengan border atas rounded */
 .about-photo {
-  width: 35%; /* Lebar untuk foto */
+  width: 35%; 
 }
 
 .profile-photo {
-  width: 100%; /* Ukuran foto agar mengisi div */
+  width: 100%;
   height: auto;
-  border-radius: 65px 65px 0 0; /* Membuat sudut atas melengkung (rounded) */
-  border: 2px solid #333; /* Border kotak dengan warna solid */
+  border-radius: 65px 65px 0 0; 
+  border: 2px solid #333; 
 }
